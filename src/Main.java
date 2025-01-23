@@ -1,15 +1,51 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner input = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("Hello World!");
+
+        int age = 18;
+        double gpa = 3.89;
+        boolean snowing = true;
+
+        System.out.println(age + "|" + gpa + "|" + snowing);
+        String city = "Columbus";
+        System.out.println(city);
+
+        float pi = 3.141592f;
+        System.out.println(pi);
+
+        int[] dailyHighs = {50,60,70,80,90};
+        System.out.println(dailyHighs[0]);
+        // sout
+        System.out.println(dailyHighs[1]);
+        System.out.println(dailyHighs[2]);
+        System.out.println(dailyHighs[3]);
+        System.out.println(dailyHighs[4]);
+        for(int i=0; i<=4; i++){
+            System.out.println(dailyHighs[i]);
         }
+
+        int[][] twoDArray = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        System.out.println(twoDArray[0][1]);
+        System.out.println(twoDArray[2][3]);
+
+        int sum = 3 + 2;
+        System.out.println(sum);
+
+        int i = 1;
+        int result = ++i * 2;
+        System.out.println(result);
+
+        System.out.println("What is your age?");
+        int inputAge = input.nextInt();
+        input.nextLine();
+        System.out.println("Your age is " + inputAge);
+
+        System.out.println("What is your name?");
+        String name = input.nextLine();
+        System.out.println("Hello " + name);
     }
 }
